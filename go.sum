@@ -1,0 +1,10 @@
+github.com/Mixaster995/test-actions v0.0.0-20210727050445-2c5f97f5ab2b/go.mod h1:oEJFEJuf86fxm+L3Fb2fExUNBTZfCimHyX0hUICMEUo=
+github.com/Mixaster995/test-actions v0.0.0-20210727072257-5ce91ef45250 h1:rN+jC15BsMS3u8YfEpc+vmTS9m75stI37bACU37t6Uo=
+github.com/Mixaster995/test-actions v0.0.0-20210727072257-5ce91ef45250/go.mod h1:oEJFEJuf86fxm+L3Fb2fExUNBTZfCimHyX0hUICMEUo=
+github.com/Mixaster995/test-actions-2 v0.0.0-20210727075142-87d87b2bc82b h1:eCs/ueTLnv1WUGLrzYCfjCDw7yZ/EH+bdJkR49/Fxsc=
+github.com/Mixaster995/test-actions-2 v0.0.0-20210727075142-87d87b2bc82b/go.mod h1:b60i8NJjbOKUh/zzszUvz9p+cbhZ3CXKKaHaPxRQBeI=
+github.com/Mixaster995/test-actions-2 v0.0.0-20210727075519-7c7b7aed385e h1:PSM8JCafEYerYAcsFks/ejM9V3yhF0/rcpITRpcaNmo=
+github.com/Mixaster995/test-actions-2 v0.0.0-20210727075519-7c7b7aed385e/go.mod h1:b60i8NJjbOKUh/zzszUvz9p+cbhZ3CXKKaHaPxRQBeI=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v2 v2.4.0 h1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY=
+gopkg.in/yaml.v2 v2.4.0/go.mod h1:RDklbk79AGWmwhnvt/jBztapEOGDOx6ZbXqjP6csGnQ=
