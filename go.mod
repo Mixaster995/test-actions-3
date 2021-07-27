@@ -3,6 +3,6 @@ module github.com/Mixaster995/test-actions-3
 go 1.16
 
 require (
-	github.com/Mixaster995/test-actions v0.0.0-20210727072257-5ce91ef45250 // indirect
-	github.com/Mixaster995/test-actions-2 v0.0.0-20210727075519-7c7b7aed385e // indirect
+	github.com/Mixaster995/test-actions v0.0.0-20210727114416-f9562833ebc3 // indirect
+	github.com/Mixaster995/test-actions-2 v0.0.0-20210727115457-c6a59a84b790
 )
