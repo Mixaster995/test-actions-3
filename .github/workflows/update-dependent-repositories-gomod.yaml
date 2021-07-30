@@ -18,12 +18,12 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' && github.actor == 'Mixaster995' || github.event_name == 'push' }}
     steps:
-#      - name: Checkout ${{ github.repository }}
-#        uses: actions/checkout@v2
-#        with:
-#          path: ${{ github.repository }}
-#          repository: ${{ github.repository }}
-#          token: ${{ secrets.TEST_SECRET }}
+      - name: Checkout ${{ github.repository }}
+        uses: actions/checkout@v2
+        with:
+          path: ${{ github.repository }}
+          repository: ${{ github.repository }}
+          token: ${{ secrets.TEST_SECRET }}
 #      - name: Find merged PR
 #        uses: jwalton/gh-find-current-pr@v1
 #        id: findPr
