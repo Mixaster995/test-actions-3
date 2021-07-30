@@ -27,8 +27,8 @@ jobs:
       - name: Find merged PR
         uses: jwalton/gh-find-current-pr@v1.0.2
         id: findPr
-        env:
-          GITHUB_TOKEN: ${{ secrets.TEST_SECRET }}
+        with:
+          github-token: ${{ github.token }}
       - name: Create commit message
         working-directory: ${{ github.repository }}
         run: |
