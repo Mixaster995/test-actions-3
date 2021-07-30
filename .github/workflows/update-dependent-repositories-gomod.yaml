@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - master
-  workflow_run:
-    types:
-      - completed
-    workflows:
-      - 'automerge'
 jobs:
   update-dependent-repositories:
     strategy:
