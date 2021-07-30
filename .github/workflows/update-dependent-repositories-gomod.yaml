@@ -24,16 +24,11 @@ jobs:
           path: ${{ github.repository }}
           repository: ${{ github.repository }}
           token: ${{ secrets.TEST_SECRET }}
-#      - name: Find merged PR
-#        uses: jwalton/gh-find-current-pr@v1
-#        id: findPr
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.TEST_SECRET }}
-      - name: Get PR
-        uses: actions-ecosystem/action-get-merged-pull-request@v1.0.1
+      - name: Find merged PR
+        uses: jwalton/gh-find-current-pr@v1.0.2
         id: findPr
-        with:
-          github_token: ${{ secrets.TEST_SECRET }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.TEST_SECRET }}
       - name: Create commit message
         working-directory: ${{ github.repository }}
         run: |
