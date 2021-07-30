@@ -38,7 +38,7 @@ jobs:
           LOG_MSG=$(git log --date=iso --pretty='format:Commit: %h%nAuthor: %an%nDate: %ad%nMessage:%n  - %B%n' -1 | sed '/^$/d;$d')
           for((i=2;i<=18;i+=2)); do n=$(printf '%*s' $((i+2))) m=$(printf '%*s' $i) LOG_MSG=$(echo "$LOG_MSG" | tr '\n' '|' | sed "s/${m}-/${n}-/2g" | tr '|' '\n'); done
           echo "$LOG_MSG" >> /tmp/commit-message
-          echo "Commit Message:"
+          echo "Commit Message: "
           cat /tmp/commit-message
 
       - name: Checkout Mixaster995/${{ matrix.repository }}
