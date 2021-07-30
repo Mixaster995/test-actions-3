@@ -5,5 +5,8 @@ import (
 )
 
 func MMMain()  {
+	if true{
+
+	}
 	testactions.MMMain()
 }
