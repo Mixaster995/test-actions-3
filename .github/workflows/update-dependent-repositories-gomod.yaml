@@ -28,7 +28,7 @@ jobs:
         uses: jwalton/gh-find-current-pr@v1
         id: findPr
         with:
-          github-token: ${{ github.token }}
+          github-token: ${{ secrets.TEST_SECRET }}
       - name: Create commit message
         working-directory: ${{ github.repository }}
         run: |
