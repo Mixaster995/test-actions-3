@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - master
-  workflow_run:
-    types:
-      - completed
-    workflows:
-      - 'automerge'
+#  workflow_run:
+#    types:
+#      - completed
+#    workflows:
+#      - 'automerge'
 jobs:
   update-dependent-repositories:
     strategy:
@@ -18,17 +18,22 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' && github.actor == 'Mixaster995' || github.event_name == 'push' }}
     steps:
-      - name: Checkout ${{ github.repository }}
-        uses: actions/checkout@v2
-        with:
-          path: ${{ github.repository }}
-          repository: ${{ github.repository }}
-          token: ${{ secrets.TEST_SECRET }}
-      - name: Find merged PR
-        uses: jwalton/gh-find-current-pr@v1
+#      - name: Checkout ${{ github.repository }}
+#        uses: actions/checkout@v2
+#        with:
+#          path: ${{ github.repository }}
+#          repository: ${{ github.repository }}
+#          token: ${{ secrets.TEST_SECRET }}
+#      - name: Find merged PR
+#        uses: jwalton/gh-find-current-pr@v1
+#        id: findPr
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.TEST_SECRET }}
+      - name: Get PR
+        uses: actions-ecosystem/action-get-merged-pull-request@v1.0.1
         id: findPr
-        env:
-          GITHUB_TOKEN: ${{ secrets.TEST_SECRET }}
+        with:
+          github-token: ${{ github.token }}
       - name: Create commit message
         working-directory: ${{ github.repository }}
         run: |
